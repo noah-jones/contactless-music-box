@@ -1,0 +1,13 @@
+[Unit]
+Description=Contactless Music Player
+After=network.target
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=pi
+ExecStart=/home/pi/app.py
+
+[Install]
+WantedBy=multi-user.target
