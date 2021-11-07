@@ -16,6 +16,6 @@ for record in tag.ndef.records:
     print(record.uri)
 
 print('after')
-tag.ndef.records = [ndef.UriRecord('https://youtu.be/'+sys.argv[1])]
+tag.ndef.records = [ndef.UriRecord(sys.argv[1])]
 
 clf.close()

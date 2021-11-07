@@ -32,7 +32,7 @@ class MusicController:
         print('playing')
         print(url)
 
-        youtube_code = urlparse(url).path[1:]
+        youtube_code = urlparse(url).path[1:].split('/')[-1]
         print(youtube_code)
         folder = '/var/lib/youtube'
         for file_ in os.listdir(folder):
